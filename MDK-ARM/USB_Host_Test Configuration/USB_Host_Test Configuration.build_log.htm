@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Mihnea Rusu, Imperial College London, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.12.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DCM.DLL V1.13.0.0
+    Target DLL: STLink\ST-LINKIII-KEIL_SWO.dll
+Dialog DLL:      TCM.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+C:\Users\Mihnea Rusu\Documents\uVision Scratchdisk\STM32\F4\Projects\USB_Host_Test\MDK-ARM\USB_Host_Test.uvproj
+Project File Date:  11/01/2015
+
+<h2>Output:</h2>
+Build target 'USB_Host_Test Configuration'
+compiling main.c...
+linking...
+Program Size: Code=15220 RO-data=480 RW-data=76 ZI-data=7172  
+"USB_Host_Test Configuration/\.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Mihnea Rusu\Documents\uVision Scratchdisk\STM32\F4\Projects\USB_Host_Test\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Load "USB_Host_Test Configuration/\\.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+K.
+
+ailed  -  Target DLL has been cancelled
+Load "USB_Host_Test Configuration/\\.axf" 
+Erase Done.
+Programming Done.
+Verify OK.
+c_scsi.c...
+compiling usbh_cdc.c...
+../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src/usbh_cdc.c(165): warning:  #225-D: the format string ends before this argument
+      USBH_DbgLog ("Cannot Find the interface for Communication Interface Class.", phost->pActiveClass->Name);         
+../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src/usbh_cdc.c(201): warning:  #225-D: the format string ends before this argument
+        USBH_DbgLog ("Cannot Find the interface for Data Interface Class.", phost->pActiveClass->Name);         
+../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Src/usbh_cdc.c: 2 warnings, 0 errors
+compiling usbh_hid_parser.c...
+compiling usbh_audio.c...
+compiling usbh_hid_mouse.c...
+compiling usbh_msc.c...
+compiling usbh_ctlreq.c...
+compiling usbh_core.c...
+compiling usbh_msc_bot.c...
+compiling usbh_mtp.c...
+compiling usbh_hid.c...
+compiling usbh_mtp_ptp.c...
+compiling stm32f4xx_hal_msp.c...
+compiling usbh_conf.c...
+compiling usbh_platform.c...
+compiling main.c...
+compiling usb_host.c...
+compiling stm32f4xx_it.c...
+linking...
+USB_Host_Test Configuration/\.axf: Error: L6218E: Undefined symbol RTLSDR_Class (referred from usb_host.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+"USB_Host_Test Configuration/\.axf" - 1 Error(s), 2 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Mihnea Rusu\Documents\uVision Scratchdisk\STM32\F4\Projects\USB_Host_Test\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
